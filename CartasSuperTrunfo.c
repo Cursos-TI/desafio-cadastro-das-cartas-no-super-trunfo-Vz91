@@ -6,12 +6,11 @@ int main(){
     int area;
     int turisticos;
     int pib;
-    int percapita;
-    char codcarta[20];
-    char cidade[50];
+    double percapita;
+    char cod_carta[5], cidade[30];
 
     printf("Digite o código da carta:");
-    scanf("%c", &codcarta);
+    scanf("%s", &cod_carta);
 
     printf("Digite a cidade:");
     scanf("%s", &cidade);
@@ -23,17 +22,18 @@ int main(){
     scanf("%i", &area);
 
     printf("Digite o PIB:");
-    scanf("%i", &pib);
+    scanf("%d", &pib);
 
     printf("Digite o PIBPerCapita:");
-    scanf("%i", &percapita);
+    scanf("%f", &percapita);
 
     printf("Digite os pontos turísticos:");
     scanf("%d", &turisticos);
 
-    printf("%s | %s", codcarta, cidade);
+    printf("%s", cod_carta);
+    printf("%s", cidade);
     printf("População:%i\n Àrea em KM²:%i\n", populacao, area);
-    printf("PIB: %i\n PIBPerCapita: %i\n Pontos Turísticos: %d\n", pib, percapita, turisticos);
+    printf("PIB: %d\n PIBPerCapita: %f\n Pontos Turísticos: %d\n", pib, percapita, turisticos);
 
     return 0;
 	
